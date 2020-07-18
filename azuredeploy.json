@@ -317,10 +317,10 @@
             "value": "[parameters('auth_default_roles')]"
           }, {
             "name": "WEBSITE_NODE_DEFAULT_VERSION",
-            "value": "8.11.1"
+            "value": "8.11.2"
           }, {
             "name": "SCM_COMMAND_IDLE_TIMEOUT",
-            "value": "300"
+            "value": "900"
           }
 
         ]
