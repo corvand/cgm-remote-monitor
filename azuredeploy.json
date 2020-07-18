@@ -221,8 +221,8 @@
         "defaultValue": "8.11.1"
     },
     "SCM_COMMAND_IDLE_TIMEOUT": {
-      "type": "string",
-      "defaultValue": "900"
+        "type": "string",
+        "defaultValue": "900"
     }
   },
   "resources": [{
