@@ -222,7 +222,7 @@
     },
     "SCM_COMMAND_IDLE_TIMEOUT": {
       "type": "string",
-      "defaultValue": "900":
+      "defaultValue": "900"
     }
   },
   "resources": [{
