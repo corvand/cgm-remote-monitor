@@ -219,6 +219,10 @@
     "WEBSITE_NODE_DEFAULT_VERSION": {
         "type": "string",
         "defaultValue": "8.11.1"
+    },
+    "SCM_COMMAND_IDLE_TIMEOUT": {
+      "type": "string",
+      "defaultValue": "900":
     }
   },
   "resources": [{
