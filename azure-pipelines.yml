@@ -6,18 +6,11 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'ubuntu-latest'
+variables:
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-
+  # Azure Resource Manager connection created during pipeline creation
+  # azureSubscription: '21063c9e-7000-4d03-811a-d47aca8385a2'
+  
   # Web app name
   webAppName: 'Mysugar'
   
