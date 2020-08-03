@@ -216,17 +216,17 @@
       "type": "string",
       "defaultValue": "readable devicestatus-upload"
     },
-    "WEBSITE_NODE_DEFAULT_VERSION": {
+    "website_node_default_version": {
         "type": "string",
         "defaultValue": "8.11.1"
     },
-    "SCM_COMMAND_IDLE_TIMEOUT": {
+    "scm_command_idle_timeout": {
         "type": "string",
         "defaultValue": "900"
     }
   },
   "resources": [{
-    "apiVersion": "2015-04-01",
+    "apiVersion": "2018-02-01",
     "name": "[parameters('hostingPlanName')]",
     "type": "Microsoft.Web/serverFarms",
     "location": "[parameters('siteLocation')]",
@@ -236,7 +236,7 @@
       "numberOfWorkers": 1
     }
   }, {
-    "apiVersion": "2015-08-01",
+    "apiVersion": "2018-02-01",
     "name": "[parameters('siteName')]",
     "type": "Microsoft.Web/Sites",
     "location": "[parameters('siteLocation')]",
@@ -321,17 +321,17 @@
             "value": "[parameters('auth_default_roles')]"
           }, {
             "name": "WEBSITE_NODE_DEFAULT_VERSION",
-            "value": "8.11.2"
+            "value": "[parameters('website_node_default_version')]"
           }, {
             "name": "SCM_COMMAND_IDLE_TIMEOUT",
-            "value": "900"
+            "value": "[parameters('scm_command_idle_timeout')]"
           }
 
         ]
       }
     },
     "resources": [{
-      "apiVersion": "2015-08-01",
+      "apiVersion": "2018-11-01",
       "name": "web",
       "type": "sourcecontrols",
       "dependsOn": [
