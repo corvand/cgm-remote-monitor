@@ -6,6 +6,20 @@
 trigger:
 - master
 
+variables:
+
+  # Azure Resource Manager connection created during pipeline creation
+  azureSubscription: '21063c9e-7000-4d03-811a-d47aca8385a2'
+  
+  # Web app name
+  webAppName: 'Mysugar'
+  
+  # Environment name
+  environmentName: 'Mysugar'
+
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
+
 pool:
   vmImage: 'ubuntu-latest'
 
