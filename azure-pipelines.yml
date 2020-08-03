@@ -12,7 +12,7 @@ variables:
   azureSubscription: '21063c9e-7000-4d03-811a-d47aca8385a2'
   
   # Web app name
-  webAppName: 'Mysugar'
+  webAppName: 'NightScoutHost'
   
   # Environment name
   environmentName: 'Mysugar'
@@ -70,7 +70,7 @@ stages:
         deploy:
           steps:            
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: hanselsugar'
+            displayName: 'Azure Web App Deploy: NightScout'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
